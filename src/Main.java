@@ -16,19 +16,19 @@ public class Main {
     List<Wine> wines = new ArrayList<>();
 
     Wine wine1 = new Wine();
-    wine1.name = "Gewurztraminer";
+    wine1.name = Wine.wineList().get(0);  // "Gewurztraminer"
     wine1.sort = "white, half sweet";
     wine1.year = 2020;
     wines.add(wine1);
 
     Wine wine2 = new Wine();
-    wine2.name = "Chablis";
+    wine2.name = Wine.wineList().get(1);    // "Chablis"
     wine2.sort = "white, dry";
     wine2.year = 2021;
     wines.add(wine2);
 
     Wine wine3 = new Wine();
-    wine3.name = "Merlot";
+    wine3.name = Wine.wineList().get(2);    // "Merlot"
     wine3.sort = "red, dry";
     wine3.year = 2021;
     wines.add(wine3);
@@ -36,6 +36,8 @@ public class Main {
     for(Wine wine : wines){
       System.out.println(wine.toString());
     }
+
+
 
 
 
